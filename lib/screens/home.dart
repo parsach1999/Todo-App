@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -8,8 +7,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Text('Hello World'),
+      appBar: AppBar(title: Text("سلام خوش اومدی پارسا")),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(FeatherIcons.plus),
+        tooltip: 'اضافه کردن کار جدید',
       ),
     );
   }
